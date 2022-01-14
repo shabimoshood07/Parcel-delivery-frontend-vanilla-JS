@@ -27,7 +27,7 @@ registerForm.addEventListener("submit", async (e) => {
     emailInput.value = "";
     passwordInput.value = "";
   } catch (error) {
-    console.log(error.response);
+    // console.log(error.response);
     errorMsg.style.visibility = "visible";
     if (!name && !email && !password) {
       errorMsg.textContent = "please provide name, email and password";
