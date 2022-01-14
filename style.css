@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Zen Old Mincho", serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f2fafb;
+}
+:root {
+  --clr-primary-1: #334876;
+  --clr-primary-2: #989aaa;
+  --clr-primary-3: #f2fafb;
+  --clr-primary-4: hsl(205, 63%, 48%);
+}
+input {
+  color: #334876;
+}
+h3 {
+  text-transform: capitalize;
+}
+/* Navigation */
+.header {
+  display: flex;
+  justify-content: center;
+  border: solid #989aaa 1px;
+  background-color: #f2fafb;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+.nav {
+  margin: 1rem 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #334876;
+}
+
+/* Login form */
+.center {
+  border: solid #989aaa;
+  border-radius: 0.4rem;
+  width: 90vw;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+#register,
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: solid; */
+  width: 80%;
+}
+.form-name {
+  font-size: 2rem;
+  color: #334876;
+  border-bottom: 4px solid;
+  margin-bottom: 2.5rem;
+}
+
+/* error display */
+.error {
+  border-radius: 4px;
+  position: absolute;
+  top: 78px;
+  color: red;
+  visibility: hidden;
+}
+.success {
+  border-radius: 4px;
+  position: absolute;
+  top: 78px;
+  color: green;
+  visibility: hidden;
+}
+.details {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.details input {
+  width: 90%;
+  margin-top: 0.5rem;
+  height: 1.5rem;
+}
+
+/* submit btn */
+.submit-btn {
+  font-size: 1.4rem;
+  padding: 0.3rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border: solid 1px;
+  border-radius: 5px;
+  color: #334876;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+
+.submit-btn:hover {
+  color: #989aaa;
+  background-color: #334876;
+}
+
+.footer {
+  /* border: solid; */
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+.footer p {
+  color: #334876;
+}
+
+/* USER PAGE */
+.header-user-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 5rem;
+}
+
+.user-detail {
+  color: #334876;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  /* border: solid; */
+  width: 90vw;
+  max-width: 600px;
+  text-align: left;
+  padding: 0;
+}
+.user-detail h3 {
+  width: 100%;
+}
+
+.logout {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  height: fit-content;
+}
+
+.destination {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.destination label {
+  /* border: solid; */
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #334876;
+  margin-right: 0.4rem;
+}
+.destination input {
+  font-size: 1.3rem;
+  width: 15rem;
+}
+
+.user-detail h3 {
+  margin: 0 1rem;
+}
+
+.parcel-container h1 {
+  color: #334876;
+}
+
+/* each parcel */
+
+.no-parcel {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0.7rem 0;
+}
+.item {
+  margin: 1rem 0;
+  display: flex;
+  color: #334876;
+  flex-direction: column;
+}
+
+.item-heading {
+  /* border: solid red; */
+  display: flex;
+  align-items: center;
+}
+
+.fas {
+  font-size: 1.2rem;
+  margin: 0 0.4rem;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: transparent;
+  margin-right: 0.6rem;
+}
+.edit-btn {
+  color: #334876;
+}
+.delete-btn {
+  color: red;
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+.check-btn {
+  color: green;
+  border: transparent;
+  background: transparent;
+  display: none;
+}
+
+.close-details {
+  display: none;
+}
+.toggle-btn {
+  color: #334876;
+  cursor: pointer;
+}
+.item-details {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.destination-details {
+  background: #989aaa;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.3rem;
+  margin: 0.5rem 0;
+  transition: all 0.6s;
+  height: 0px;
+  overflow: hidden;
+  /* transform: translateY(-200px); */
+}
+.destination-details h3 {
+  margin: 0.4rem 0;
+}
+
+.parcels {
+  width: 80%;
+}
+
+/* EDIT PAGE */
+.update-btn,
+.back-btn {
+  font-size: 1.3rem;
+  margin: 1rem 0.5rem;
+}
+
+.edit-label {
+  color: #334876;
+}
+
+/* ADMIN EDIT */
+.present-location {
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+.present-location label {
+  font-size: 1.2rem;
+}
+.present-location input {
+  font-size: 1rem;
+}
+
+#status {
+  font-size: 1rem;
+  color: #334876;
+}

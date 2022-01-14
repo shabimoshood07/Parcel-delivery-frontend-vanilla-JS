@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Delivery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="header header-user-page">
+        <div class="nav">
+            <h1 class="title">Parcel Delivery</h1>
+        </div>
+       
+        <button type="button" class="btn submit-btn logout">Logout</button>
+    </section>
+
+    <!-- create parcel -->
+    <div class="user-detail">
+    
+    </div>
+    <section class="create-parcel center">
+        <form action="submit" id="register" class="create">
+        <h1 class="form-name">Create Parcel</h1>
+
+            <div class="error">
+                <p id="error">error</p>
+            </div>
+            <div class="success">
+                <p id="success">delivery created successful</p>
+            </div>
+
+            <div class="destination">
+                <label for="destination">destination</label>
+                <input type="text" class="destination-input">
+            </div>
+            <button type="submit" class="btn submit-btn create-btn">Create</button>
+
+        </form>
+    </section>
+<!-- parcel container -->
+    <section class="center parcel-container">
+        <h1>Created Parcels</h1>
+        <div class="parcels">
+            <!-- <h1> No Parcels available, create new delivery</h1> -->
+            <!-- item 1 -->
+
+            <!-- <article class="item">
+                <div class="item-heading">
+                    <div class="toggle-icon">
+                        <button class="close-details toggle-btn">
+                            <i class="fas fa-arrow-circle-up"></i>
+                        </button>
+                        <button class="open-details toggle-btn">
+                            <i class="fas fa-arrow-circle-down"></i>
+                        </button>
+                    </div>
+                    <div class="item-details">
+                        <label for="id">Parcel id: 1234567</label>
+                        <div class="">
+                            <a href="" class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <button data-id="" class="delete-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button class="check-btn">
+                                <i class="fas fa-check-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-details">
+                        <h3>Destination: kano</h3> 
+                        <h3>Status: Pickup station</h3>
+                        <h3>Present location: kano</h3>
+                </div>
+                
+            </article> -->
+
+
+        </div>
+
+    </section>
+
+   
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- javascript -->
+<script src="user.js"></script>
+
+
+</html>

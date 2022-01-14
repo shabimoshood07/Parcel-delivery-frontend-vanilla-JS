@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Delivery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="header header-user-page">
+        <div class="nav">
+            <h1 class="title">Parcel Delivery</h1>
+        </div>
+
+        <button type="button" class="btn submit-btn logout">Logout</button>
+    </section>
+
+    <!-- create parcel -->
+    <div class="user-detail">
+
+    </div>
+    <section class="create-parcel center">
+        <form action="submit" id="register" class="update">
+            <h1 class="form-name">Update Parcel</h1>
+
+            <div class="item-details">
+                <label for="id" class="edit-label"></label>
+            </div>
+            <div class="error">
+                <p id="error"></p>
+            </div>
+            <div class="success">
+                <p id="success">updated successfully</p>
+            </div>
+
+            <div class="destination present-location">
+                <label for="destination">Present Location  </label>
+                <input type="text" class="location-input">
+            </div>
+          
+            <div class="destination status">
+                <label for="present-location">Status</label>
+                <select name="status" id="status"> status
+                    <option value="pickup station">pickup station</option>
+                    <option value="in-transit">in-transit</option>
+                    <option value="delivered">delivered</option>
+                </select>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn submit-btn update-btn">Update</button>
+                <a href="admin.html" class="btn submit-btn back-btn">Back</a>
+
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- javascript -->
+    <script src="admin-edit.js"></script>
+
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Delivery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="header">
+        <div class="nav">
+            <h1 class="title">Parcel Delivery</h1>
+        </div>
+    </section>
+
+
+    <!-- Form -->
+    <section class="center">
+        <form action="submit" id="login">
+            <h1 class="form-name">Login</h1>
+
+            <div class="error">
+                <p id="error"></p>
+            </div>
+
+            <div class="success">
+                <p id="success">Login successful</p>
+            </div>
+
+            <div class="email details">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div class="password details">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <button type="submit" class="btn submit-btn">Login</button>
+        </form>
+        <div class="footer">
+            <p>Are you registered? <a href="index.html">Register</a></p>
+        </div>
+
+    </section>
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- javascript -->
+<script src="login.js"></script>
+
+
+</html>
